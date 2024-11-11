@@ -1,0 +1,203 @@
+:root {
+    /* Variables */
+}
+
+* {
+    box-sizing: border-box; /* Stopping borders-margins-paddings causing page width to stretch beyond vw */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR";
+    font-weight: 300;
+}
+
+main {
+}
+
+
+
+#hp-cover-container {
+    position: relative;
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border: 2px red solid;
+
+}
+
+.hp-cover-img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    border: 2px blue solid;;
+}
+
+.hp-cover-text{
+    width: auto;
+    height:fit-content;
+
+    position: absolute;
+    right: 20%;
+    top: 5%;
+
+    font-size: x-large;
+    text-align: left;
+    color: white;
+
+    border: 2px green solid;
+}
+
+p {
+    font-size: x-large;
+}
+
+.container {
+    border: solid 1px #ff0000;
+    zoom: 1; /* IE6&7 */
+    display: grid;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+
+.photography-container {
+    position: relative;
+    width: 100%;
+    border: 3px solid hotpink;
+}
+
+#photography-title {
+    border: 3px solid green;
+    height: fit-content;
+    position: relative;
+}
+
+.photography-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.photo {
+    height: 10vh;
+    width: 10vh;
+    border: 3px orange solid;
+    margin-bottom: 20px;
+}
+
+.section1 {
+    background-color: yellow;
+    height: 100px;
+}
+.section2 {
+    height: 100px;
+    background-color: red;
+}
+.section3 {
+    height: 100px;
+    background-color: blue;
+}
+.section4{
+    height: 100px;
+    background-color: green;
+}
+
+.bio {
+    position: relative;
+    font-size: 1%;
+}
+
+/* 
+@media (max-width: 1280px){
+    #Welcome {
+        width: 100%;
+        height: 100%;
+        background-color: green;
+    }
+}
+
+@media (max-width: 768px){
+    #Welcome {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
+}
+
+@media (max-width: 640px){
+    #Welcome {
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+    }
+} 
+*/
+
+.gridtest {
+    display: grid;
+    grid-template: repeat(4,25%) / repeat(4,25%);
+    outline-style: solid blue 3px;
+    margin: 5px;
+}
+
+.grid-test-child {
+    margin: 10px;
+    min-height: 10vh;
+    max-height: 20vh;
+}
+
+.redtest {
+    grid-row: 1/3;
+    grid-column: 1/3;
+
+    background-color: red;
+    color: white;
+    
+}
+
+.bluetest{
+    grid-row: 3/5;
+    grid-column: 3/5;
+
+    background-color: blue;
+    color: white;
+}
+
+.greentest{
+    grid-row: 3/5;
+    grid-column: 1/3;
+
+    background-color: green;
+    color: white;
+}
+.yellowtest{
+    grid-row: 1/3;
+    grid-column: 3/5;
+    color:white;
+    background-color: yellow;
+}
+
+
+/* CSS Notes */
+.cssnotes::after {
+    content: 'I learned HTML and CSS for a poorly-made website instead of using a site builder. \A This says a lot about me I fear.';
+    
+}
+.cssnotes:hover::after {
+    content: 'I\'ll die before I use Sq*****Sp***';
+}
