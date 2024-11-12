@@ -16,6 +16,7 @@ body {
 main {
 }
 
+/* */
 #hp-navbar {
     display: flex;
     margin-bottom: 10px;
@@ -26,6 +27,7 @@ main {
 
 .hp-nav-option {
     border: 1px black solid;
+    border-radius: 20px;
     min-width: 12.5%;
     max-width: 20%;
     padding-left: 10px;
@@ -33,6 +35,14 @@ main {
     list-style-type: none;
     font-size: xx-large;
     text-align: center;
+    font-weight: 400;
+    margin: 4px;
+}
+
+.hp-nav-option:hover {
+    background-color: gainsboro;
+    color: crimson;
+    transition: 0.5s;
 }
 
 
@@ -53,6 +63,10 @@ main {
 .hp-cover-img {
     width: 100%;
     height: auto;
+
+    max-height: 100vh;
+
+
     object-fit: fill;
     border: 2px blue solid;;
 }
@@ -70,6 +84,17 @@ main {
     color: white;
 
     border: 2px green solid;
+}
+
+.hp-section-title {
+    width: fit-content;
+    margin-left: 10px;
+}
+
+.hp-section-title:hover {
+    background-color: gainsboro;
+    color: crimson;
+    transition: 0.5s;
 }
 
 p {
@@ -93,25 +118,20 @@ p {
 }
 
 
-.photography-container, .art-container, .projects-container {
+.photography-container, .art-container, .projects-container, .gamedev-container {
     position: relative;
     width: 100%;
     border: 3px solid hotpink;
 }
 
-#photography-title {
-    border: 3px solid green;
-    height: fit-content;
-    position: relative;
-}
 
-.photography-items, .art-items, .projects-items {
+.photography-items, .art-items, .projects-items, .gamedev-items {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.photo, .project, .art {
+.photo, .project, .art, .game-res {
     height: 15vh;
     width: 15vh;
     border: 3px orange solid;
