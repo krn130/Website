@@ -16,7 +16,10 @@ body {
 main {
 }
 
-/* */
+@media only screen and (max-width: 12px) {
+    
+
+/* NAVIGATION BAR HOMEPAGE */
 #hp-navbar {
     display: flex;
     margin-bottom: 10px;
@@ -45,7 +48,7 @@ main {
     transition: 0.5s;
 }
 
-
+/* HOMEPAGE COVER IMAGE */
 #hp-cover-container {
     position: relative;
 
@@ -86,6 +89,7 @@ main {
     border: 2px green solid;
 }
 
+/* HOMEPAGE SECTION */
 .hp-section-title {
     width: fit-content;
     margin-left: 10px;
@@ -96,27 +100,6 @@ main {
     color: crimson;
     transition: 0.5s;
 }
-
-p {
-    font-size: x-large;
-}
-
-.container {
-    border: solid 1px #ff0000;
-    zoom: 1; /* IE6&7 */
-    display: grid;
-}
-
-.container:before,
-.container:after {
-    content: "";
-    display: table;
-}
-
-.container:after {
-    clear: both;
-}
-
 
 .photography-container, .art-container, .projects-container, .gamedev-container {
     position: relative;
@@ -138,27 +121,36 @@ p {
     margin-bottom: 20px;
 }
 
-.section1 {
-    background-color: yellow;
-    height: 100px;
-}
-.section2 {
-    height: 100px;
-    background-color: red;
-}
-.section3 {
-    height: 100px;
-    background-color: blue;
-}
-.section4{
-    height: 100px;
-    background-color: green;
-}
-
 .bio {
     position: relative;
     font-size: 1%;
 }
+
+
+/* MISC */
+p {
+    font-size: x-large;
+}
+
+.container {
+    border: solid 1px #ff0000;
+    zoom: 1; /* IE6&7 */
+    display: grid;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+
+
+
 
 /* 
 @media (max-width: 1280px){
@@ -239,3 +231,11 @@ p {
 .cssnotes:hover::after {
     content: 'I\'ll die before I use Sq*****Sp***';
 }
+
+}
+
+@media only screen and (min-width: 1280px)
+
+480px
+768px 
+1024px
