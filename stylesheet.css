@@ -16,8 +16,13 @@ body {
 main {
 }
 
-@media only screen and (max-width: 12px) {
-    
+@media only screen and (min-width: 1281px) { }
+@media only screen and (max-width: 1280px) { }
+@media only screen and (max-width: 1024px){ }
+@media only screen and (max-width: 768px){ }
+@media only screen and (max-width: 640px){ } 
+@media only screen and (max-width: 480px){ }
+
 
 /* NAVIGATION BAR HOMEPAGE */
 #hp-navbar {
@@ -152,75 +157,9 @@ p {
 
 
 
-/* 
-@media (max-width: 1280px){
-    #Welcome {
-        width: 100%;
-        height: 100%;
-        background-color: green;
-    }
-}
 
-@media (max-width: 768px){
-    #Welcome {
-        width: 100%;
-        height: 100%;
-        background-color: red;
-    }
-}
 
-@media (max-width: 640px){
-    #Welcome {
-        width: 100%;
-        height: 100%;
-        background-color: blue;
-    }
-} 
-*/
 
-.gridtest {
-    display: grid;
-    grid-template: repeat(4,25%) / repeat(4,25%);
-    outline-style: solid blue 3px;
-    margin: 5px;
-}
-
-.grid-test-child {
-    margin: 10px;
-    min-height: 10vh;
-    max-height: 20vh;
-}
-
-.redtest {
-    grid-row: 1/3;
-    grid-column: 1/3;
-
-    background-color: red;
-    color: white;
-    
-}
-
-.bluetest{
-    grid-row: 3/5;
-    grid-column: 3/5;
-
-    background-color: blue;
-    color: white;
-}
-
-.greentest{
-    grid-row: 3/5;
-    grid-column: 1/3;
-
-    background-color: green;
-    color: white;
-}
-.yellowtest{
-    grid-row: 1/3;
-    grid-column: 3/5;
-    color:white;
-    background-color: yellow;
-}
 
 
 /* CSS Notes */
@@ -232,10 +171,3 @@ p {
     content: 'I\'ll die before I use Sq*****Sp***';
 }
 
-}
-
-@media only screen and (min-width: 1280px)
-
-480px
-768px 
-1024px
