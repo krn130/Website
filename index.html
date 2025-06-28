@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>kieronmccallan.com</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Gallery</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>WIP</h1>
+  <div class="filters">
+    <div class="tabs">
+      <button class="tab active" data-topic="all">All</button>
+      <button class="tab" data-topic="web">Web</button>
+      <button class="tab" data-topic="games">Games</button>
+      <button class="tab" data-topic="tools">Tools</button>
+    </div>
+    <input type="text" id="search" placeholder="Search projects...">
+  </div>
 
   <div id="project-grid" class="grid"></div>
 
   <script src="script.js"></script>
-  
 </body>
 </html>
