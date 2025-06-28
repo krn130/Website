@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Gallery</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="filters">
-    <div class="tabs">
-      <button class="tab active" data-topic="all">All</button>
-      <button class="tab" data-topic="web">Web</button>
-      <button class="tab" data-topic="games">Games</button>
-      <button class="tab" data-topic="tools">Tools</button>
-      <button class="tab" data-topic="mobile">Mobile</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-900 font-sans">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <div class="flex flex-wrap items-center gap-2 mb-6">
+        <div class="flex flex-wrap gap-2">
+          <button class="tab px-4 py-2 bg-gray-800 text-white rounded active" data-topic="all">All</button>
+          <button class="tab px-4 py-2 bg-gray-200 text-black rounded" data-topic="web">Web</button>
+          <button class="tab px-4 py-2 bg-gray-200 text-black rounded" data-topic="games">Games</button>
+          <button class="tab px-4 py-2 bg-gray-200 text-black rounded" data-topic="tools">Tools</button>
+          <button class="tab px-4 py-2 bg-gray-200 text-black rounded" data-topic="mobile">Mobile</button>
+        </div>
+        <input
+          type="text"
+          id="search"
+          placeholder="Search projects..."
+          class="ml-auto px-3 py-2 border border-gray-300 rounded w-full sm:w-64"
+        />
+      </div>
+
+      <div id="project-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </div>
-    <input type="text" id="search" placeholder="Search projects...">
-  </div>
 
-  <div id="project-grid" class="grid"></div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
