@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Portfolio Website",
+    "topics": ["web"],
+    "description": "My personal portfolio website built with HTML and CSS.",
+    "link": "https://kieronmccallan.com"
+  },
+  {
+    "name": "Pixel Painter",
+    "topics": ["games", "tools"],
+    "description": "A browser-based pixel art tool built with JavaScript.",
+    "link": "https://github.com/yourname/pixel-painter"
+  },
+  {
+    "name": "Task CLI",
+    "topics": ["tools"],
+    "description": "A command-line task manager written in Python.",
+    "link": "https://github.com/yourname/task-cli"
+  }
+]
