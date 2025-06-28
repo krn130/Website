@@ -1,20 +1,22 @@
 [
   {
-    "name": "Portfolio Website",
+    "name": "Project 1",
     "topics": ["web"],
-    "description": "My personal portfolio website built with HTML and CSS.",
+    "description": "Project 1 description",
     "link": "https://kieronmccallan.com"
   },
-  {
-    "name": "Pixel Painter",
-    "topics": ["games", "tools"],
-    "description": "A browser-based pixel art tool built with JavaScript.",
-    "link": "https://github.com/yourname/pixel-painter"
-  },
-  {
-    "name": "Task CLI",
+  
+ {
+    "name": "Project 2",
     "topics": ["tools"],
-    "description": "A command-line task manager written in Python.",
-    "link": "https://github.com/yourname/task-cli"
-  }
+    "description": "Project 2 description",
+    "link": "https://kieronmccallan.com"
+  },
+  
+{
+    "name": "Project 3",
+    "topics": ["games"],
+    "description": "Project 3 description",
+    "link": "https://kieronmccallan.com"
+  },
 ]
