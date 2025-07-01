@@ -1,28 +1,28 @@
 [
   {
     "name": "Project 1",
-    "topics": ["web"],
+    "topics": ["a"],
     "description": "Project 1 description",
     "link": "https://kieronmccallan.com"
   },
   
  {
     "name": "Project 2",
-    "topics": ["tools"],
+    "topics": ["b"],
     "description": "Project 2 description",
     "link": "https://kieronmccallan.com"
   },
   
 {
     "name": "Project 3",
-    "topics": ["games"],
+    "topics": ["c"],
     "description": "Project 3 description",
     "link": "https://kieronmccallan.com"
   },
 
   {
     "name": "Project 4",
-    "topics": ["mobile"],
+    "topics": ["d"],
     "description": "Project 4 description",
     "link": "https://kieronmccallan.com"
   }
