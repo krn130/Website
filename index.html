@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Gallery</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-white text-gray-900 font-sans">
-    <div class="max-w-6xl mx-auto px-4 py-8">
-      <div class="flex flex-wrap items-center gap-2 mb-6">
-        <div class="flex flex-wrap gap-2">
-          <button class="tab px-4 py-2 bg-gray-800 text-white rounded active" data-topic="all">All</button>
-          <button class="tab px-4 py-2 bg-gray-200 text-black rounded" data-topic="web">Web</button>
-          <button class="tab px-4 py-2 bg-gray-200 text-black rounded" data-topic="games">Games</button>
-          <button class="tab px-4 py-2 bg-gray-200 text-black rounded" data-topic="tools">Tools</button>
-          <button class="tab px-4 py-2 bg-gray-200 text-black rounded" data-topic="mobile">Mobile</button>
-        </div>
-        <input
-          type="text"
-          id="search"
-          placeholder="Search projects..."
-          class="ml-auto px-3 py-2 border border-gray-300 rounded w-full sm:w-64"
-        />
-      </div>
 
-      <div id="project-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Cards will be populated dynamically with JavaScript -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Gallery</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="stylesheet" href="stylesheets/home_project_styles.css" />
+</head>
+
+<body>
+  <!-- Progress Bar + Navigation Bullets -->
+  <div id="nav-bullets">
+    <a href="#section-1" data-label="Home" data-color="red"></a>
+    <a href="#section-2" data-label="Projects" data-color="green"></a>
+    <a href="#section-3" data-label="Contact" data-color="blue"></a>
+  </div>
+
+  <div id="progress"></div>
+  <div id="section-label"></div>
+
+  <!-- Section 1: Intro -->
+  <div id="section-1" class="track-section" data-color="red" data-label="Home">
+    
+  </div>
+
+  <!-- Section 2: Projects -->
+  <div id="section-2" class="track-section" data-color="green" data-label="Projects">
+    <div class="filters">
+      <div class="tabs">
+        <button class="tab active" data-topic="all">All</button>
+        <button class="tab" data-topic="A">A</button>
+        <button class="tab" data-topic="B">B</button>
+        <button class="tab" data-topic="C">C</button>
+        <button class="tab" data-topic="D">D</button>
       </div>
+      <input type="text" id="search" placeholder="Search projects...">
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <div id="project-grid" class="grid"></div>
+  </div>
+
+  <!-- Section 3: Contact -->
+  <div id="section-3" class="track-section" data-color="blue" data-label="Contact">
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/home_projects_script.js"></script>
+  <script src="scripts/scroll_progress.js"></script>
+</body>
+
 </html>
