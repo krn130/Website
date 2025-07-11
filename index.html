@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- ############################################################################ -->
+<!--  &HEAD -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Gallery</title>
+  <title>kieronmccallan.com</title>
 
-  <!-- Fonts -->
+  <!-- ####################### -->
+  <!-- ~FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="stylesheets/style.css" />
-  <link rel="stylesheet" href="stylesheets/home_project_styles.css" />
+  <!-- ####################### -->
+  <!-- !STYLES -->
+  <link rel="stylesheet" href="STYLESHEETS/base.css" />
+  <link rel="stylesheet" href="STYLESHEETS/homepage_projects.css" />
 </head>
 
+<!-- ############################################################################ -->
+<!-- %BODY -->
 <body>
-  <!-- Progress Bar + Navigation Bullets -->
+  <!-- £ PROGRESS BAR & NAV BULLETS -->
   <div id="nav-bullets">
     <a href="#section-1" data-label="Home" data-color="red"></a>
     <a href="#section-2" data-label="Projects" data-color="green"></a>
@@ -27,34 +33,41 @@
   <div id="progress"></div>
   <div id="section-label"></div>
 
-  <!-- Section 1: Intro -->
+<!-- ############################################################################ -->
+  <!-- *INTRO -->
   <div id="section-1" class="track-section" data-color="red" data-label="Home">
     
   </div>
 
-  <!-- Section 2: Projects -->
+<!-- ############################################################################ -->
+  <!-- !PROJECTS -->
+
   <div id="section-2" class="track-section" data-color="green" data-label="Projects">
-    <div class="filters">
-      <div class="tabs">
-        <button class="tab active" data-topic="all">All</button>
-        <button class="tab" data-topic="A">A</button>
-        <button class="tab" data-topic="B">B</button>
-        <button class="tab" data-topic="C">C</button>
-        <button class="tab" data-topic="D">D</button>
+    <div class="project-section-content">
+      <div class="filters">
+        <div class="tabs">
+          <button class="tab active" data-topic="all">All</button>
+          <button class="tab" data-topic="A">A</button>
+          <button class="tab" data-topic="B">B</button>
+          <button class="tab" data-topic="C">C</button>
+          <button class="tab" data-topic="D">D</button>
+        </div>
+        <input type="text" id="search" placeholder="Search projects...">
       </div>
-      <input type="text" id="search" placeholder="Search projects...">
+  
+      <div id="project-grid" class="grid"></div>
     </div>
-
-    <div id="project-grid" class="grid"></div>
   </div>
-
-  <!-- Section 3: Contact -->
+  
+<!-- ############################################################################ -->
+  <!-- ~CONTACT -->
   <div id="section-3" class="track-section" data-color="blue" data-label="Contact">
-  </div>
+  
 
-  <!-- Scripts -->
-  <script src="scripts/home_projects_script.js"></script>
-  <script src="scripts/scroll_progress.js"></script>
+<!-- ############################################################################ -->
+  <!-- *SCRIPTS -->
+  <script src="SCRIPTS/home_projects_script.js"></script>
+  <script src="SCRIPTS/scroll_progress.js"></script>
 </body>
 
 </html>
